@@ -47,11 +47,8 @@ const Home = () => {
       <option>23</option>
       <option>24</option>
       <option>25</option>
-
       <option>26</option>
-
       <option>27</option>
-
       <option>28</option>
     </select>
   </div>
@@ -64,12 +61,9 @@ const Home = () => {
       <option>28</option>
       <option>29</option>
       <option>30</option>
-
       <option>31</option>
       <option>32</option>
-
       <option>33</option>
-
 
     </select>
   </div>
@@ -88,22 +82,14 @@ const Home = () => {
     <select className="px-22 py-2 rounded-md text-gray-600 bg-amber-50">
       <option>Hindi</option>
       <option>Marathi</option>
-
       <option>Punjabi</option>
-
       <option>Bengali</option>
-
       <option>Gujarati</option>
-
       <option>Urdu</option>
       <option>Telegu</option>
-
       <option>Kannada</option>
       <option>English</option>
       <option>Tamil</option>
-
-
-
 
     </select>
   </div>
@@ -219,8 +205,7 @@ const Home = () => {
       <img 
         src="/couple2.jpg" 
         alt="couple"
-        className="w-full h-80 object-cover"
-      />
+        className="w-full h-80 object-cover"/>
 
       <div className="p-6 text-center">
         <h2 className="text-2xl font-semibold mb-3">
@@ -233,8 +218,6 @@ const Home = () => {
       </div>
 
     </div>
-
-
     {/* Card 3 */}
     <div className="w-80 bg-white shadow-lg rounded-md overflow-hidden">
       
@@ -258,8 +241,6 @@ const Home = () => {
   </div>
 
 </div>
-
-
     </div>
   );
 };
