@@ -182,8 +182,7 @@ const Home = () => {
       <img 
         src="/couple1.jpg" 
         alt="couple"
-        className="w-full h-80 object-cover"
-      />
+        className="w-full h-80 object-cover"/>
 
       <div className="p-6 text-center">
         <h2 className="text-2xl font-semibold mb-3">
@@ -227,8 +226,7 @@ const Home = () => {
       <img 
         src="/couple3.jpg" 
         alt="couple"
-        className="w-full h-80 object-cover"
-      />
+        className="w-full h-80 object-cover" />
 
       <div className="p-6 text-center">
         <h2 className="text-2xl font-semibold mb-3">
