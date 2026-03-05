@@ -2,14 +2,14 @@ import React from "react";
 
 const Home = () => {
   return (
-<div
-  className="relative h-[700px] w-full bg-cover bg-no-repeat"
-  style={{
-    backgroundImage: "url('/nsaadi.jpg')",
-    backgroundPosition: "center 30%"
-  }}
->
-  <img src="/shaadi_logo.svg" alt="couple" />
+    <div
+      className="relative h-[700px] w-full bg-cover bg-no-repeat"
+      style={{
+        backgroundImage: "url('/nsaadi.jpg')",
+        backgroundPosition: "center 30%"
+      }}
+    >
+      <img src="/shaadi_logo.svg" alt="couple" />
       {/* Dark Overlay */}
       {/* <div className="absolute inset-0 bg-black/50"></div> */}
 
@@ -27,233 +27,350 @@ const Home = () => {
             Photo-Matches via Email. Join Free!
           </p>
 
-         {/* Search Box */}
-<div className="bg-black/20 backdrop-blur-md p-6 flex flex-wrap gap-4 items-end justify-start text-white">
+          {/* Search Box */}
+          <div className="bg-black/20 backdrop-blur-md p-6 flex flex-wrap gap-4 items-end justify-start text-white">
 
-  {/* Looking For */}
-  <div className="flex flex-col">
-    <label className="text-sm mb-1">I'm looking for a</label>
-    <select className="px-15 py-2 rounded-md text-gray-600 bg-amber-50">
-      <option>Woman</option>
-      <option>Man</option>
-    </select>
-  </div>
+            {/* Looking For */}
+            <div className="flex flex-col">
+              <label className="text-sm mb-1">I'm looking for a</label>
+              <select className="px-15 py-2 rounded-md text-gray-600 bg-amber-50">
+                <option>Woman</option>
+                <option>Man</option>
+              </select>
+            </div>
 
-  {/* Age From */}
-  <div className="flex flex-col">
-    <label className="text-sm mb-1">aged</label>
-    <select className="px-10 py-2 rounded-md text-gray-600 bg-amber-50">
-      <option>22</option>
-      <option>23</option>
-      <option>24</option>
-      <option>25</option>
-      <option>26</option>
-      <option>27</option>
-      <option>28</option>
-    </select>
-  </div>
+            {/* Age From */}
+            <div className="flex flex-col">
+              <label className="text-sm mb-1">aged</label>
+              <select className="px-10 py-2 rounded-md text-gray-600 bg-amber-50">
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+              </select>
+            </div>
 
-  {/* To */}
-  <div className="flex flex-col">
-    <label className="text-sm mb-1 invisible">to</label>
-    <select className="px-10 py-2 rounded-md text-gray-600 bg-amber-50">
-      <option>27</option>
-      <option>28</option>
-      <option>29</option>
-      <option>30</option>
-      <option>31</option>
-      <option>32</option>
-      <option>33</option>
+            {/* To */}
+            <div className="flex flex-col">
+              <label className="text-sm mb-1 invisible">to</label>
+              <select className="px-10 py-2 rounded-md text-gray-600 bg-amber-50">
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+                <option>32</option>
+                <option>33</option>
 
-    </select>
-  </div>
+              </select>
+            </div>
 
-  {/* Religion */}
-  <div className="flex flex-col">
-    <label className="text-sm mb-1">Of religion</label>
-    <select className="px-10 py-2 rounded-md text-gray-600 bg-amber-50">
-      <option>Select Religion</option>
-    </select>
-  </div>
+            {/* Religion */}
+            <div className="flex flex-col">
+              <label className="text-sm mb-1">Of religion</label>
+              <select className="px-10 py-2 rounded-md text-gray-600 bg-amber-50">
+                <option>Select Religion</option>
+              </select>
+            </div>
 
-  {/* Mother Tongue */}
-  <div className="flex flex-col">
-    <label className="text-sm mb-1">and mother tongue</label>
-    <select className="px-22 py-2 rounded-md text-gray-600 bg-amber-50">
-      <option>Hindi</option>
-      <option>Marathi</option>
-      <option>Punjabi</option>
-      <option>Bengali</option>
-      <option>Gujarati</option>
-      <option>Urdu</option>
-      <option>Telegu</option>
-      <option>Kannada</option>
-      <option>English</option>
-      <option>Tamil</option>
+            {/* Mother Tongue */}
+            <div className="flex flex-col">
+              <label className="text-sm mb-1">and mother tongue</label>
+              <select className="px-22 py-2 rounded-md text-gray-600 bg-amber-50">
+                <option>Hindi</option>
+                <option>Marathi</option>
+                <option>Punjabi</option>
+                <option>Bengali</option>
+                <option>Gujarati</option>
+                <option>Urdu</option>
+                <option>Telegu</option>
+                <option>Kannada</option>
+                <option>English</option>
+                <option>Tamil</option>
 
-    </select>
-  </div>
+              </select>
+            </div>
 
-  {/* Button */}
-  <div className="flex flex-col">
-    <label className="invisible mb-1">Button</label>
-    <button className="bg-sky-500 hover:bg-sky-600 px-8 py-2 rounded-md text-white font-medium">
-      Let's Begin
-    </button>
-  </div>
+            {/* Button */}
+            <div className="flex flex-col">
+              <label className="invisible mb-1">Button</label>
+              <button className="bg-sky-500 hover:bg-sky-600 px-8 py-2 rounded-md text-white font-medium">
+                Let's Begin
+              </button>
+            </div>
 
-</div>
+          </div>
         </div>
       </div>
 
-    <div className="bg-gray-100 py-20">
+      <div className="bg-gray-100 py-20">
 
-  {/* Heading */}
-  <h1 className="text-center text-red-500 text-5xl font-normal mb-20">
-    Find your Special Someone
-  </h1>
+        {/* Heading */}
+        <h1 className="text-center text-red-500 text-5xl font-normal mb-20">
+          Find your Special Someone
+        </h1>
 
-  {/* 3 Steps Section */}
-  <div className="flex justify-center gap-32 text-center">
+        {/* 3 Steps Section */}
+        <div className="flex justify-center gap-32 text-center">
 
-    {/* Step 1 */}
-    <div className="flex flex-col items-center">
-      <div className="h-40 w-40 bg-teal-500 rounded-full flex items-center justify-center text-white text-3xl">
-        ✏️
+          {/* Step 1 */}
+          <div className="flex flex-col items-center">
+            <div className="h-40 w-40 bg-teal-500 rounded-full flex items-center justify-center text-white text-3xl">
+              ✏️
+            </div>
+
+            <div className="-mt-6 h-10 w-10 bg-gray-200 rounded-full flex items-center justify-center text-red-500 font-bold">
+              1
+            </div>
+
+            <h2 className="text-teal-600 text-2xl mt-6">Sign Up</h2>
+            <p className="text-gray-600 mt-2 w-64">
+              Register for free & put up your Matrimony Profile
+            </p>
+          </div>
+
+          {/* Step 2 */}
+          <div className="flex flex-col items-center">
+            <div className="h-40 w-40 bg-teal-500 rounded-full flex items-center justify-center text-white text-3xl">
+              ✔️
+            </div>
+
+            <div className="-mt-6 h-10 w-10 bg-gray-200 rounded-full flex items-center justify-center text-red-500 font-bold">
+              2
+            </div>
+
+            <h2 className="text-teal-600 text-2xl mt-6">Connect</h2>
+            <p className="text-gray-600 mt-2 w-64">
+              Select & Connect with Matches you like
+            </p>
+          </div>
+
+          {/* Step 3 */}
+          <div className="flex flex-col items-center">
+            <div className="h-40 w-40 bg-teal-500 rounded-full flex items-center justify-center text-white text-3xl">
+              💬
+            </div>
+
+            <div className="-mt-6 h-10 w-10 bg-gray-200 rounded-full flex items-center justify-center text-red-500 font-bold">
+              3
+            </div>
+
+            <h2 className="text-teal-600 text-2xl mt-6">Interact</h2>
+            <p className="text-gray-600 mt-2 w-64">
+              Become a Premium Member & Start a Conversation
+            </p>
+          </div>
+
+        </div>
       </div>
 
-      <div className="-mt-6 h-10 w-10 bg-gray-200 rounded-full flex items-center justify-center text-red-500 font-bold">
-        1
+      <div className="bg-gray-100 py-20">
+
+        {/* Heading */}
+        <h1 className="text-center text-red-500 text-5xl font-normal mb-16">
+          6 Million Matches & Counting
+        </h1>
+
+        {/* Cards Section */}
+        <div className="flex justify-center gap-10 px-10">
+
+          {/* Card 1 */}
+          <div className="w-80 bg-white shadow-lg rounded-md overflow-hidden">
+
+            <img
+              src="/1sadi.jpg"
+              alt="couple"
+              className="w-full h-80 object-cover" />
+
+            <div className="p-6 text-center">
+              <h2 className="text-2xl font-semibold mb-3">
+                Payal & Geetesh
+              </h2>
+
+              <p className="text-gray-600 text-sm">
+                I'm very glad that I found the love of my life here.
+                I've got the person exactly I wanted.
+              </p>
+            </div>
+
+          </div>
+
+
+          {/* Card 2 */}
+          <div className="w-80 bg-white shadow-lg rounded-md overflow-hidden">
+
+            <img
+              src="/2sdi.jpg"
+              alt="couple"
+              className="w-full h-80 object-cover" />
+
+            <div className="p-6 text-center">
+              <h2 className="text-2xl font-semibold mb-3">
+                Parth & Saheli
+              </h2>
+
+              <p className="text-gray-600 text-sm">
+                From strangers to partners, everything changed beautifully.
+              </p>
+            </div>
+
+          </div>
+          {/* Card 3 */}
+          <div className="w-80 bg-white shadow-lg rounded-md overflow-hidden">
+
+            <img
+              src="/3sdi.jpg"
+              alt="couple"
+              className="w-full h-80 object-cover" />
+
+            <div className="p-6 text-center">
+              <h2 className="text-2xl font-semibold mb-3">
+                Karthikeyan & Shanmugapriya
+              </h2>
+
+              <p className="text-gray-600 text-sm">
+                What started as a simple chat turned into a lifelong bond.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
 
-      <h2 className="text-teal-600 text-2xl mt-6">Sign Up</h2>
-      <p className="text-gray-600 mt-2 w-64">
-        Register for free & put up your Matrimony Profile
-      </p>
-    </div>
 
-    {/* Step 2 */}
-    <div className="flex flex-col items-center">
-      <div className="h-40 w-40 bg-teal-500 rounded-full flex items-center justify-center text-white text-3xl">
-        ✔️
+      <div className="bg-red-600 flex items-center justify-center gap-6 p-9">
+        <h1 className="text-3xl text-white">
+          Your story is waiting to happen!
+        </h1>
+
+        <button className="bg-red-600 text-amber-50 text-2xl border-2 border-amber-50 px-16 py-3 ml-12 rounded">
+          Get Started
+        </button>
       </div>
 
-      <div className="-mt-6 h-10 w-10 bg-gray-200 rounded-full flex items-center justify-center text-red-500 font-bold">
-        2
-      </div>
+      {/* nnmm */}
+<div className="bg-gray-100 py-16">
 
-      <h2 className="text-teal-600 text-2xl mt-6">Connect</h2>
-      <p className="text-gray-600 mt-2 w-64">
-        Select & Connect with Matches you like
-      </p>
-    </div>
+<h1 className="text-3xl text-red-600 text-center mb-10">
+Shaadi.com - Join 3 Million Members with Photos
+</h1>
 
-    {/* Step 3 */}
-    <div className="flex flex-col items-center">
-      <div className="h-40 w-40 bg-teal-500 rounded-full flex items-center justify-center text-white text-3xl">
-        💬
-      </div>
+<p className="max-w-5xl mx-auto text-gray-700 text-center leading-relaxed">
+Shaadi.com, one of India's best known brands and the world's largest matrimonial service was founded with a simple objective - to help people find happiness. The company pioneered online matrimonials in 1996 and continues to lead the exciting matrimony category after more than a decade. By redefining the way Indian brides and grooms meet for marriage, Shaadi.com has created a world-renowned service that has touched over 35 million people.
+<span className="text-cyan-600 ml-2 cursor-pointer">Learn more ▶</span>
+</p>
 
-      <div className="-mt-6 h-10 w-10 bg-gray-200 rounded-full flex items-center justify-center text-red-500 font-bold">
-        3
-      </div>
-
-      <h2 className="text-teal-600 text-2xl mt-6">Interact</h2>
-      <p className="text-gray-600 mt-2 w-64">
-        Become a Premium Member & Start a Conversation
-      </p>
-    </div>
-
-  </div>
+{/* Countries */}
+<div className="text-center mt-6 text-cyan-600">
+India | USA | Canada | UK | Singapore | Australia | UAE | NRI Matrimonials ▶
 </div>
 
-<div className="bg-gray-100 py-20">
+{/* Trusted Button */}
+<div className="flex items-center justify-center mt-10">
+<div className="border-t w-1/3"></div>
 
-  {/* Heading */}
-  <h1 className="text-center text-red-500 text-5xl font-normal mb-16">
-    6 Million Matches & Counting
-  </h1>
-
-  {/* Cards Section */}
-  <div className="flex justify-center gap-10 px-10">
-
-    {/* Card 1 */}
-    <div className="w-80 bg-white shadow-lg rounded-md overflow-hidden">
-      
-      <img 
-        src="/1sadi.jpg" 
-        alt="couple"
-        className="w-full h-80 object-cover"/>
-
-      <div className="p-6 text-center">
-        <h2 className="text-2xl font-semibold mb-3">
-          Payal & Geetesh
-        </h2>
-
-        <p className="text-gray-600 text-sm">
-          I'm very glad that I found the love of my life here.
-          I've got the person exactly I wanted.
-        </p>
-      </div>
-
-    </div>
-
-
-    {/* Card 2 */}
-    <div className="w-80 bg-white shadow-lg rounded-md overflow-hidden">
-      
-      <img 
-        src="/2sdi.jpg" 
-        alt="couple"
-        className="w-full h-80 object-cover"/>
-
-      <div className="p-6 text-center">
-        <h2 className="text-2xl font-semibold mb-3">
-          Parth & Saheli
-        </h2>
-
-        <p className="text-gray-600 text-sm">
-          From strangers to partners, everything changed beautifully.
-        </p>
-      </div>
-
-    </div>
-    {/* Card 3 */}
-    <div className="w-80 bg-white shadow-lg rounded-md overflow-hidden">
-      
-      <img 
-        src="/3sdi.jpg" 
-        alt="couple"
-        className="w-full h-80 object-cover" />
-
-      <div className="p-6 text-center">
-        <h2 className="text-2xl font-semibold mb-3">
-          Karthikeyan & Shanmugapriya
-        </h2>
-
-        <p className="text-gray-600 text-sm">
-          What started as a simple chat turned into a lifelong bond.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-
-
-<div className="bg-red-600 flex items-center justify-center gap-6 p-9">
-  <h1 className="text-3xl text-white">
-    Your story is waiting to happen!
-  </h1>
-
- <button className="bg-red-600 text-amber-50 text-2xl border-2 border-amber-50 px-16 py-3 ml-12 rounded">
-  Get Started
+<button className="bg-cyan-600 text-white px-8 py-3 text-lg mx-4 rounded">
+Trusted by Millions
 </button>
+
+<div className="border-t w-1/3"></div>
 </div>
 
 
+{/* Features */}
+<div className="flex justify-center gap-24 mt-12 text-gray-600">
+
+{/* Feature 1 */}
+<div className="flex items-center gap-3">
+<div className="w-12 h-12 border rounded-full flex items-center justify-center text-red-500 text-xl">
+👤
+</div>
+<p className="text-lg">Best Matches</p>
+</div>
+
+{/* Feature 2 */}
+<div className="flex items-center gap-3">
+<div className="w-12 h-12 border rounded-full flex items-center justify-center text-red-500 text-xl">
+✔
+</div>
+<p className="text-lg">Verified Profiles</p>
+</div>
+
+{/* Feature 3 */}
+<div className="flex items-center gap-3">
+<div className="w-12 h-12 border rounded-full flex items-center justify-center text-red-500 text-xl">
+🔒
+</div>
+<p className="text-lg">100% Privacy</p>
+</div>
+
+</div>
+
+
+
+{/* mm */}
+
+{/* Footer */}
+
+<div className="max-w-6xl mx-auto grid grid-cols-4 gap-10 text-gray-600 text-center">
+
+{/* Column 1 */}
+<div>
+<h2 className="text-lg font-semibold mb-4">Need Help?</h2>
+<p>Member Login</p>
+<p>Sign Up</p>
+<p>Partner Search</p>
+<p>How to Use Shaadi.com</p>
+<p>Premium Memberships</p>
+<p>Customer Support</p>
+<p>Site Map</p>
+</div>
+
+{/* Column 2 */}
+<div>
+<h2 className="text-lg font-semibold mb-4">Company</h2>
+<p>About Us</p>
+<p>Shaadi Blog</p>
+<p>Careers</p>
+<p>Awards & Recognition</p>
+<p>Cov-Aid</p>
+<p>Contact Us</p>
+</div>
+
+{/* Column 3 */}
+<div>
+<h2 className="text-lg font-semibold mb-4">Privacy & You</h2>
+<p>Terms of Use</p>
+<p>Privacy Policy</p>
+<p>Be Safe Online</p>
+<p>Report Misuse</p>
+</div>
+
+{/* Column 4 */}
+<div>
+<h2 className="text-lg font-semibold mb-4">More</h2>
+<p>VIP Shaadi</p>
+<p>Sangam</p>
+<p>Shaadi Centres</p>
+<p>Success Stories</p>
+<p>Shaadi Live</p>
+<p>Elite Matrimony by Shaadi.com</p>
+<p>Astrochat.com</p>
+<p>Chat with Astrologers</p>
+</div>
+
+</div>
+</div>
+
+{/* Bottom Line */}
+<div className="border-t mt-10 pt-6 text-center text-gray-500 text-sm">
+© 1996-2026 Shaadi.com, The World's Leading Matchmaking Service™
+</div>
 
     </div>
   );
