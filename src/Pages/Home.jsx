@@ -181,7 +181,7 @@ const Home = () => {
     <div className="w-80 bg-white shadow-lg rounded-md overflow-hidden">
       
       <img 
-        src="/couple1.jpg" 
+        src="/1sadi.jpg" 
         alt="couple"
         className="w-full h-80 object-cover"/>
 
@@ -203,7 +203,7 @@ const Home = () => {
     <div className="w-80 bg-white shadow-lg rounded-md overflow-hidden">
       
       <img 
-        src="/couple2.jpg" 
+        src="/2sdi.jpg" 
         alt="couple"
         className="w-full h-80 object-cover"/>
 
@@ -222,7 +222,7 @@ const Home = () => {
     <div className="w-80 bg-white shadow-lg rounded-md overflow-hidden">
       
       <img 
-        src="/couple3.jpg" 
+        src="/3sdi.jpg" 
         alt="couple"
         className="w-full h-80 object-cover" />
 
@@ -241,6 +241,15 @@ const Home = () => {
   </div>
 
 </div>
+
+
+<div className="bg-red-600">
+<h1 className="text-3xl text-white p-9 text-center">Your story is waiting to happen!</h1>
+<button>Get Started</button>
+</div>
+
+
+
     </div>
   );
 };
