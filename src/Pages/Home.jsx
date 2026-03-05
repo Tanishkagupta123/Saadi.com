@@ -4,14 +4,16 @@ const Home = () => {
   return (
     <div
       className="relative h-[700px] w-full bg-cover bg-no-repeat"
-      style={{
-        backgroundImage: "url('/nsaadi.jpg')",
-        backgroundPosition: "center 30%"
-      }}
-    >
-      <img src="/shaadi_logo.svg" alt="couple" />
-      {/* Dark Overlay */}
-      {/* <div className="absolute inset-0 bg-black/50"></div> */}
+  style={{
+    backgroundImage: "url('/nsaadi.jpg')",
+    backgroundPosition: "center 30%",
+  }}
+>
+  <img
+    src="/shaadi_logo.svg"
+    alt="logo"
+    className="absolute top-6 left-10 h-10"
+  />
 
       {/* Navbar Space Fix */}
       <div className="relative z-10">
@@ -50,13 +52,24 @@ const Home = () => {
                 <option>26</option>
                 <option>27</option>
                 <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+                <option>32</option>
+                <option>33</option>
+
               </select>
             </div>
+            <div>to</div>
 
             {/* To */}
             <div className="flex flex-col">
-              <label className="text-sm mb-1 invisible">to</label>
               <select className="px-10 py-2 rounded-md text-gray-600 bg-amber-50">
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
                 <option>27</option>
                 <option>28</option>
                 <option>29</option>
@@ -88,6 +101,8 @@ const Home = () => {
             <div className="flex flex-col">
               <label className="text-sm mb-1">and mother tongue</label>
               <select className="px-22 py-2 rounded-md text-gray-600 bg-amber-50">
+                <option value="">Select</option>
+
 
                 <option>Hindi</option>
                 <option>Marathi</option>

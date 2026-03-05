@@ -8,7 +8,7 @@ const Layout = () => {
       {/* Navbar */}
       <header className="absolute top-0 left-0 w-full z-50">
         <nav className="flex justify-end items-center px-12 py-6">
-          <ul className="flex space-x-8 text-white text-lg font-medium">
+          <ul className="flex space-x-8 text-blue-300 text-lg font-medium">
             <li>
               <Link to="/login" className="hover:text-pink-400 transition">
                 Login
