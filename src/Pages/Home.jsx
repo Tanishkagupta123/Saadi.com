@@ -243,9 +243,14 @@ const Home = () => {
 </div>
 
 
-<div className="bg-red-600">
-<h1 className="text-3xl text-white p-9 text-center">Your story is waiting to happen!</h1>
-<button>Get Started</button>
+<div className="bg-red-600 flex items-center justify-center gap-6 p-9">
+  <h1 className="text-3xl text-white">
+    Your story is waiting to happen!
+  </h1>
+
+ <button className="bg-red-600 text-amber-50 text-2xl border-2 border-amber-50 px-16 py-3 ml-12 rounded">
+  Get Started
+</button>
 </div>
 
 
