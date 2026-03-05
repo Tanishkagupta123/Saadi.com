@@ -72,7 +72,15 @@ const Home = () => {
             <div className="flex flex-col">
               <label className="text-sm mb-1">Of religion</label>
               <select className="px-10 py-2 rounded-md text-gray-600 bg-amber-50">
-                <option>Select Religion</option>
+                <option value="">Select</option>
+                <option>Hindu</option>
+                <option>Muslim</option>
+                <option>Christian</option>
+                <option>Sikh</option>
+                <option>Parsi</option>
+                <option>Jain</option>
+                <option>No Religion</option>
+                <option>Other</option>
               </select>
             </div>
 
@@ -80,6 +88,7 @@ const Home = () => {
             <div className="flex flex-col">
               <label className="text-sm mb-1">and mother tongue</label>
               <select className="px-22 py-2 rounded-md text-gray-600 bg-amber-50">
+
                 <option>Hindi</option>
                 <option>Marathi</option>
                 <option>Punjabi</option>
@@ -254,126 +263,135 @@ const Home = () => {
       </div>
 
       {/* nnmm */}
-<div className="bg-gray-100 py-16">
+      <div className="bg-gray-90 py-16">
 
-<h1 className="text-3xl text-red-600 text-center mb-10">
-Shaadi.com - Join 3 Million Members with Photos
-</h1>
+        <h1 className="text-3xl text-red-600 text-center mb-10">
+          Shaadi.com - Join 3 Million Members with Photos
+        </h1>
 
-<p className="max-w-5xl mx-auto text-gray-700 text-center leading-relaxed">
-Shaadi.com, one of India's best known brands and the world's largest matrimonial service was founded with a simple objective - to help people find happiness. The company pioneered online matrimonials in 1996 and continues to lead the exciting matrimony category after more than a decade. By redefining the way Indian brides and grooms meet for marriage, Shaadi.com has created a world-renowned service that has touched over 35 million people.
-<span className="text-cyan-600 ml-2 cursor-pointer">Learn more ▶</span>
-</p>
+        <p className="max-w-5xl mx-auto text-gray-700 text-center leading-relaxed">
+          Shaadi.com, one of India's best known brands and the world's largest matrimonial service was founded with a simple objective - to help people find happiness. The company pioneered online matrimonials in 1996 and continues to lead the exciting matrimony category after more than a decade. By redefining the way Indian brides and grooms meet for marriage, Shaadi.com has created a world-renowned service that has touched over 35 million people.
+          <span className="text-cyan-600 ml-2 cursor-pointer">Learn more ▶</span>
+        </p>
 
-{/* Countries */}
-<div className="text-center mt-6 text-cyan-600">
-India | USA | Canada | UK | Singapore | Australia | UAE | NRI Matrimonials ▶
-</div>
+        {/* Countries */}
+        <div className="text-center mt-6 text-cyan-600">
+          India | USA | Canada | UK | Singapore | Australia | UAE | NRI Matrimonials ▶
+        </div>
 
-{/* Trusted Button */}
-<div className="flex items-center justify-center mt-10">
-<div className="border-t w-1/3"></div>
+        {/* Trusted Button */}
+        <div className="flex items-center justify-center mt-10">
+          <div className="border-t w-1/4 border-gray-400 "></div>
 
-<button className="bg-cyan-600 text-white px-8 py-3 text-lg mx-4 rounded">
-Trusted by Millions
-</button>
+          <button className="bg-cyan-600 text-white px-8 py-3 text-lg mx-4 rounded ">
+            Trusted by Millions
+          </button>
 
-<div className="border-t w-1/3"></div>
-</div>
-
-
-{/* Features */}
-<div className="flex justify-center gap-24 mt-12 text-gray-600">
-
-{/* Feature 1 */}
-<div className="flex items-center gap-3">
-<div className="w-12 h-12 border rounded-full flex items-center justify-center text-red-500 text-xl">
-👤
-</div>
-<p className="text-lg">Best Matches</p>
-</div>
-
-{/* Feature 2 */}
-<div className="flex items-center gap-3">
-<div className="w-12 h-12 border rounded-full flex items-center justify-center text-red-500 text-xl">
-✔
-</div>
-<p className="text-lg">Verified Profiles</p>
-</div>
-
-{/* Feature 3 */}
-<div className="flex items-center gap-3">
-<div className="w-12 h-12 border rounded-full flex items-center justify-center text-red-500 text-xl">
-🔒
-</div>
-<p className="text-lg">100% Privacy</p>
-</div>
-
-</div>
+          <div className="border-t w-1/4 border-gray-400 "></div>
+        </div>
 
 
+        {/* Features */}
+        <div className="flex justify-center gap-24 mt-12 text-gray-600">
 
-{/* mm */}
+          {/* Feature 1 */}
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 border rounded-full flex items-center justify-center text-red-500 text-xl">
+              👤
+            </div>
+            <p className="text-lg">Best Matches</p>
+          </div>
 
-{/* Footer */}
+          {/* Feature 2 */}
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 border rounded-full flex items-center justify-center text-red-500 text-xl">
+              ✔
+            </div>
+            <p className="text-lg">Verified Profiles</p>
+          </div>
 
-<div className="max-w-6xl mx-auto grid grid-cols-4 gap-10 text-gray-600 text-center">
+          {/* Feature 3 */}
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 border rounded-full flex items-center justify-center text-red-500 text-xl">
+              🔒
+            </div>
+            <p className="text-lg">100% Privacy</p>
+          </div>
 
-{/* Column 1 */}
-<div>
-<h2 className="text-lg font-semibold mb-4">Need Help?</h2>
-<p>Member Login</p>
-<p>Sign Up</p>
-<p>Partner Search</p>
-<p>How to Use Shaadi.com</p>
-<p>Premium Memberships</p>
-<p>Customer Support</p>
-<p>Site Map</p>
-</div>
+        </div>
+        <div className="border-t w-2/3 mx-auto my-7 p-5 border-gray-400"></div>
 
-{/* Column 2 */}
-<div>
-<h2 className="text-lg font-semibold mb-4">Company</h2>
-<p>About Us</p>
-<p>Shaadi Blog</p>
-<p>Careers</p>
-<p>Awards & Recognition</p>
-<p>Cov-Aid</p>
-<p>Contact Us</p>
-</div>
 
-{/* Column 3 */}
-<div>
-<h2 className="text-lg font-semibold mb-4">Privacy & You</h2>
-<p>Terms of Use</p>
-<p>Privacy Policy</p>
-<p>Be Safe Online</p>
-<p>Report Misuse</p>
-</div>
 
-{/* Column 4 */}
-<div>
-<h2 className="text-lg font-semibold mb-4">More</h2>
-<p>VIP Shaadi</p>
-<p>Sangam</p>
-<p>Shaadi Centres</p>
-<p>Success Stories</p>
-<p>Shaadi Live</p>
-<p>Elite Matrimony by Shaadi.com</p>
-<p>Astrochat.com</p>
-<p>Chat with Astrologers</p>
-</div>
+        {/* mm */}
 
-</div>
-</div>
+        {/* Footer */}
 
-{/* Bottom Line */}
-<div className="border-t mt-10 pt-6 text-center text-gray-500 text-sm">
-© 1996-2026 Shaadi.com, The World's Leading Matchmaking Service™
-</div>
+        <div className="max-w-6xl mx-auto grid grid-cols-4 gap-10 text-gray-600 text-center">
+
+          {/* Column 1 */}
+          <div>
+            <h2 className="text-lg font-semibold mb-4">Need Help?</h2>
+            <div className="border-t p-3 border-gray-400 "></div>
+
+            <p>Member Login</p>
+            <p>Sign Up</p>
+            <p>Partner Search</p>
+            <p>How to Use Shaadi.com</p>
+            <p>Premium Memberships</p>
+            <p>Customer Support</p>
+            <p>Site Map</p>
+          </div>
+
+          {/* Column 2 */}
+          <div>
+            <h2 className="text-lg font-semibold mb-4">Company</h2>
+            <div className="border-t p-3 border-gray-400 "></div>
+
+            <p>About Us</p>
+            <p>Shaadi Blog</p>
+            <p>Careers</p>
+            <p>Awards & Recognition</p>
+            <p>Cov-Aid</p>
+            <p>Contact Us</p>
+          </div>
+
+          {/* Column 3 */}
+          <div>
+            <h2 className="text-lg font-semibold mb-4">Privacy & You</h2>
+            <div className="border-t p-3 border-gray-400  "></div>
+
+            <p>Terms of Use</p>
+            <p>Privacy Policy</p>
+            <p>Be Safe Online</p>
+            <p>Report Misuse</p>
+          </div>
+
+          {/* Column 4 */}
+          <div>
+            <h2 className="text-lg font-semibold mb-4">More</h2>
+            <div className="border-t p-3 border-gray-400 "></div>
+
+            <p>VIP Shaadi</p>
+            <p>Sangam</p>
+            <p>Shaadi Centres</p>
+            <p>Success Stories</p>
+            <p>Shaadi Live</p>
+            <p>Elite Matrimony by Shaadi.com</p>
+            <p>Astrochat.com</p>
+            <p>Chat with Astrologers</p>
+          </div>
+
+        </div>
+      </div>
+
+      {/* Bottom Line */}
+      <div className=" mt-10 p-7 text-center text-gray-500 text-sm bg-gray-200">
+        © 1996-2026 Shaadi.com, The World's Leading Matchmaking Service™
+      </div>
 
     </div>
   );
 };
 
-export default Home;
+export default Home
