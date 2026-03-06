@@ -3,7 +3,7 @@ import React from 'react'
 const Signup = () => {
   return (
     <>
-    <div className='bg-amber-300'>
+    <div className='bg-white'>
         This Profile is for
         <button className='bg-amber-900 rounded-2xl'>Myself</button>
         <button className='bg-amber-900 rounded-2xl'>My Son</button>
