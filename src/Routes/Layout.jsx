@@ -19,6 +19,13 @@ const Layout = () => {
                 Help
               </Link>
             </li>
+
+             <li>
+              <Link to="/signup" className="hover:text-pink-400 transition">
+                Signup
+              </Link>
+            </li>
+
           </ul>
         </nav>
       </header>

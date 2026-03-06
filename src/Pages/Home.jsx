@@ -102,7 +102,7 @@ const Home = () => {
               <label className="text-sm mb-1">and mother tongue</label>
               <select className="px-22 py-2 rounded-md text-gray-600 bg-amber-50">
                 <option value="">Select</option>
-
+  
 
                 <option>Hindi</option>
                 <option>Marathi</option>
