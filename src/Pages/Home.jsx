@@ -60,6 +60,7 @@ const Home = () => {
 
               </select>
             </div>
+            
             <div>to</div>
 
             {/* To */}
