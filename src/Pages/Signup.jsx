@@ -9,8 +9,7 @@ const Signup = () => {
     setProfileType(type);
 
     if (type === "Myself" || type === "My Friend" || type === "My Relative") {
-      setShowGender(true);
-    } else {
+      setShowGender(true); } else {
       alert("Continue to next step");
     }
   };
