@@ -56,12 +56,10 @@ const Signup = () => {
         <div className="mt-6">
           <h3 className="mb-3">Select Gender</h3>
 
-          <button className="bg-blue-500 text-white px-4 py-2 rounded-full mr-3">
-            Male
+          <button className="bg-blue-500 text-white px-4 py-2 rounded-full mr-3"> Male
           </button>
 
-          <button className="bg-pink-500 text-white px-4 py-2 rounded-full">
-            Female
+          <button className="bg-pink-500 text-white px-4 py-2 rounded-full"> Female
           </button>
         </div>
       )}
