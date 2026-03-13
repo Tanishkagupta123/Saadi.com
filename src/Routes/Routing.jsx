@@ -5,6 +5,7 @@ import Login from "../Pages/Login"
 import Help from "../Pages/Help"
 import Home from "../Pages/Home"
 import Signup from '../Pages/Signup'
+import DOB from '../Pages/DOB'
 
 
 const Routing = () => {
@@ -22,6 +23,9 @@ const Routing = () => {
         <Route path="/login" element={<Login/>}/>
         <Route path="/help" element={<Help/>}/>
         <Route path="/signup" element={<Signup/>}/>
+        <Route path="/dob" element={<DOB/>}/>
+
+
 
 
       <Route path='*' element={<h1>This page is not available</h1>}/>
