@@ -6,6 +6,8 @@ import Help from "../Pages/Help"
 import Home from "../Pages/Home"
 import Signup from '../Pages/Signup'
 import DOB from '../Pages/DOB'
+import Religion from '../Pages/Religion'
+import Email from '../Pages/Email'
 
 
 const Routing = () => {
@@ -24,6 +26,9 @@ const Routing = () => {
         <Route path="/help" element={<Help/>}/>
         <Route path="/signup" element={<Signup/>}/>
         <Route path="/dob" element={<DOB/>}/>
+        <Route path="/religion" element={<Religion/>}/>
+        <Route path="/email" element={<Email/>}/>
+
 
 
 

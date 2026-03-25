@@ -1,12 +1,15 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const DOB = () => {
+
+  const navigate = useNavigate();
 
   const [firstName,setFirstName] = useState("");
   const [lastName,setLastName] = useState("");
 
   const [date,setDate] = useState("");
-  const [month,setMonth] = useState("");
+  const [month,setMonth] = useState("");   // ✅ FIXED
   const [year,setYear] = useState("");
 
   const [error,setError] = useState("");
@@ -57,7 +60,11 @@ const DOB = () => {
     }
 
     setError("");
-    console.log(firstName,lastName,date,month,year);
+
+    // ✅ NEXT PAGE
+    navigate("/religion", {
+      state: { firstName, lastName, date, month, year }
+    });
   };
 
   return (
