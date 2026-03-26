@@ -9,8 +9,10 @@ const DOB = () => {
   const [lastName,setLastName] = useState("");
 
   const [date,setDate] = useState("");
-  const [month,setMonth] = useState("");   // ✅ FIXED
+  const [month,setMonth] = useState("");
   const [year,setYear] = useState("");
+
+  const [city,setCity] = useState("");   // ✅ NEW
 
   const [error,setError] = useState("");
 
@@ -21,7 +23,8 @@ const DOB = () => {
     const m = Number(month);
     const y = Number(year);
 
-    if(!firstName || !lastName || !d || !m || !y){
+    // ✅ validation
+    if(!firstName || !lastName || !city || !d || !m || !y){
       setError("Please fill all fields");
       return;
     }
@@ -61,9 +64,9 @@ const DOB = () => {
 
     setError("");
 
-    // ✅ NEXT PAGE
+    // ✅ NEXT PAGE (city bhi pass hoga)
     navigate("/religion", {
-      state: { firstName, lastName, date, month, year }
+      state: { firstName, lastName, date, month, year, city }
     });
   };
 
@@ -77,59 +80,70 @@ const DOB = () => {
       <form onSubmit={handleSubmit} className="space-y-4">
 
         <input
-        type="text"
-        placeholder="First Name"
-        value={firstName}
-        onChange={(e)=>setFirstName(e.target.value)}
-        className="border px-4 py-2 w-64 rounded"
+          type="text"
+          placeholder="First Name"
+          value={firstName}
+          onChange={(e)=>setFirstName(e.target.value)}
+          className="border px-4 py-2 w-64 rounded"
         />
 
         <br/>
 
         <input
-        type="text"
-        placeholder="Last Name"
-        value={lastName}
-        onChange={(e)=>setLastName(e.target.value)}
-        className="border px-4 py-2 w-64 rounded"
+          type="text"
+          placeholder="Last Name"
+          value={lastName}
+          onChange={(e)=>setLastName(e.target.value)}
+          className="border px-4 py-2 w-64 rounded"
+        />
+
+        <br/>
+
+        {/* ✅ NEW CITY FIELD */}
+        <input
+          type="text"
+          placeholder="City"
+          value={city}
+          onChange={(e)=>setCity(e.target.value)}
+          className="border px-4 py-2 w-64 rounded"
         />
 
         <div className="flex gap-3 justify-center mt-4">
 
           <input
-          type="text"
-          placeholder="Date"
-          value={date}
-          maxLength={2}
-          onChange={(e)=>{
-            const val = e.target.value.replace(/\D/g,"");
-            if(val.length <= 2) setDate(val);
-          }}
-          className="border px-3 py-2 w-20 rounded"
+            type="text"
+            placeholder="Date"
+            value={date}
+            maxLength={2}
+            onChange={(e)=>{
+              const val = e.target.value.replace(/\D/g,"");
+              if(val.length <= 2) setDate(val);
+            }}
+            className="border px-3 py-2 w-20 rounded"
           />
 
           <input
-          type="text"
-          placeholder="Month"
-          value={month}
-          maxLength={2}
-          onChange={(e)=>{
-            const val = e.target.value.replace(/\D/g,"");
-            if(val.length <= 2) setMonth(val);
-          }}
-          className="border px-3 py-2 w-24 rounded"
+            type="text"
+            placeholder="Month"
+            value={month}
+            maxLength={2}
+            onChange={(e)=>{
+              const val = e.target.value.replace(/\D/g,"");
+              if(val.length <= 2) setMonth(val);
+            }}
+            className="border px-3 py-2 w-24 rounded"
           />
 
           <input
-          type="text"
-          placeholder="Year"
-          value={year}
-          maxLength={4}
-          onChange={(e)=>{
-            const val = e.target.value.replace(/\D/g,"");
-            if(val.length <= 4) setYear(val);
-          }}
-          className="border px-3 py-2 w-28 rounded"
+            type="text"
+            placeholder="Year"
+            value={year}
+            maxLength={4}
+            onChange={(e)=>{
+              const val = e.target.value.replace(/\D/g,"");
+              if(val.length <= 4) setYear(val);
+            }}
+            className="border px-3 py-2 w-28 rounded"
           />
 
         </div>
