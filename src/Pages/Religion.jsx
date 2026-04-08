@@ -47,6 +47,9 @@ const Religion = () => {
           <option>Hindu</option>
           <option>Muslim</option>
           <option>Christian</option>
+          <option>Marathi</option>
+          <option>Punjabi</option>
+
         </select>
 
         <select onChange={(e)=>setCommunity(e.target.value)} className="border px-4 py-2 w-64 rounded">
