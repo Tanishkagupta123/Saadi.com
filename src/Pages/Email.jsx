@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom"; // 👈 yaha add
 
 const Email = () => {
 
   const location = useLocation();
+  const navigate = useNavigate(); // 👈 yaha add
   const data = location.state;   // previous data
 
   const [email, setEmail] = useState("");
@@ -36,7 +37,10 @@ const Email = () => {
     };
 
     console.log("FINAL DATA 👉", finalData);
+
+    navigate("/dashboard"); // 🔥 yahi main add kiya hai
   };
+  
 
   return (
     <div className="bg-white p-10 text-center">
@@ -45,14 +49,12 @@ const Email = () => {
         Email & Mobile
       </h2>
 
-      {/* previous data show */}
       <p className="mb-2">
         {data?.firstName} {data?.lastName}
       </p>
 
       <div className="space-y-4">
 
-        {/* Email */}
         <input
           type="email"
           placeholder="Enter Email"
@@ -61,7 +63,6 @@ const Email = () => {
           className="border px-4 py-2 w-64 rounded"
         />
 
-        {/* Mobile */}
         <div className="flex justify-center gap-2">
           <span className="border px-3 py-2 rounded">+91</span>
 
@@ -77,7 +78,6 @@ const Email = () => {
           />
         </div>
 
-        {/* error */}
         {error && (
           <p className="text-red-500 text-sm">
             {error}
@@ -98,3 +98,4 @@ const Email = () => {
 };
 
 export default Email;
+  
