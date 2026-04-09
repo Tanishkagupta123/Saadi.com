@@ -7,13 +7,13 @@ const Religion = () => {
   const navigate = useNavigate();
   const data = location.state;
 
-  const [religion,setReligion] = useState("");
-  const [community,setCommunity] = useState("");
-  const [country,setCountry] = useState("");
+  const [religion, setReligion] = useState("");
+  const [community, setCommunity] = useState("");
+  const [country, setCountry] = useState("");
 
   const handleSubmit = () => {
 
-    if(!religion || !community || !country){
+    if (!religion || !community || !country) {
       alert("Please fill all fields");
       return;
     }
@@ -42,7 +42,7 @@ const Religion = () => {
 
       <div className="space-y-4 mt-4">
 
-        <select onChange={(e)=>setReligion(e.target.value)} className="border px-4 py-2 w-64 rounded">
+        <select onChange={(e) => setReligion(e.target.value)} className="border px-4 py-2 w-64 rounded">
           <option value="">Select Religion</option>
           <option>Hindu</option>
           <option>Muslim</option>
@@ -52,17 +52,24 @@ const Religion = () => {
 
         </select>
 
-        <select onChange={(e)=>setCommunity(e.target.value)} className="border px-4 py-2 w-64 rounded">
+        <select onChange={(e) => setCommunity(e.target.value)} className="border px-4 py-2 w-64 rounded">
           <option value="">Select Community</option>
           <option>Hindi</option>
           <option>Punjabi</option>
           <option>Bengali</option>
           <option>Urdu</option>
+          <option>Marathi</option>
+          <option>Gujarati</option>
+          <option>Tamil</option>
+          <option>Telugu</option>
+
+
+
 
 
         </select>
 
-        <select onChange={(e)=>setCountry(e.target.value)} className="border px-4 py-2 w-64 rounded">
+        <select onChange={(e) => setCountry(e.target.value)} className="border px-4 py-2 w-64 rounded">
           <option value="">Select Country</option>
           <option>India</option>
           <option>USA</option>
