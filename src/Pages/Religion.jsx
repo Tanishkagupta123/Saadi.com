@@ -49,6 +49,9 @@ const Religion = () => {
           <option>Christian</option>
           <option>Marathi</option>
           <option>Punjabi</option>
+          <option>Sikh</option>
+          <option>Buddhist</option>
+          <option>Jain</option>
 
         </select>
 
@@ -62,9 +65,6 @@ const Religion = () => {
           <option>Gujarati</option>
           <option>Tamil</option>
           <option>Telugu</option>
-
-
-
 
 
         </select>
