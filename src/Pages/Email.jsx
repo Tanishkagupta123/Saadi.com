@@ -74,8 +74,7 @@ const Email = () => {
               const val = e.target.value.replace(/\D/g, "");
               if (val.length <= 10) setMobile(val);
             }}
-            className="border px-4 py-2 w-48 rounded"
-          />
+            className="border px-4 py-2 w-48 rounded"  />
         </div>
 
         {error && (
