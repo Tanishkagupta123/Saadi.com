@@ -66,6 +66,10 @@ const Religion = () => {
           <option>Tamil</option>
           <option>Telugu</option>
 
+  <option>Odia</option>
+  <option>Assamese</option>
+  
+
 
         </select>
 
