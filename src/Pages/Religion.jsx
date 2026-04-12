@@ -65,16 +65,15 @@ const Religion = () => {
           <option>Gujarati</option>
           <option>Tamil</option>
           <option>Telugu</option>
+          <option>Odia</option>
+          <option>Assamese</option>
 
-  <option>Odia</option>
-  <option>Assamese</option>
-  
-  <option>Konkani</option>
-  <option>Sindhi</option>
-  
-  <option>Maithili</option>
-  <option>Dogri</option>
-  
+          <option>Konkani</option>
+          <option>Sindhi</option>
+
+          <option>Maithili</option>
+          <option>Dogri</option>
+
 
 
         </select>
