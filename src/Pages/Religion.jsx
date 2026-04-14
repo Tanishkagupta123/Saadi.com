@@ -3,9 +3,9 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 const Religion = () => {
 
-  const location = useLocation();
-  const navigate = useNavigate();
-  const data = location.state;
+  const location = useLocation()
+  const navigate = useNavigate()
+  const data = location.state
 
   const [religion, setReligion] = useState("");
   const [community, setCommunity] = useState("");
