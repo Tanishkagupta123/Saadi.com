@@ -72,6 +72,7 @@ const Religion = () => {
           <option>Maithili</option>
           <option>Dogri</option>
 
+
         </select>
 
         <select onChange={(e) => setCountry(e.target.value)} className="border px-4 py-2 w-64 rounded">
