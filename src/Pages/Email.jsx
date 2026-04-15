@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom"; // 👈 yaha add
 
 const Email = () => {
-
   const location = useLocation();
   const navigate = useNavigate(); // 👈 yaha add
   const data = location.state;   // previous data
